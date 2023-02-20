@@ -8,6 +8,12 @@ export const PaginationContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  > span {
+    font-size: 12px;
+    font-weight: light;
+    color: #999;
+  }
+
   > button {
     width: 30px;
     height: 30px;
