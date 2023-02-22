@@ -51,7 +51,7 @@ describe('Tests correct rendering of GitHub search app features', () => {
       cy.findByTestId('searchInput').type('Sarthory{enter}');
       cy.wait(1500);
       cy.findByTestId('userCard').should('have.length', 1);
-      cy.findByTestId('pagepagination').should('not.exist');
+      cy.findByTestId('pagePagination').should('not.exist');
     });
 
     it('Shoud use the pagination to flow between pages', () => {
