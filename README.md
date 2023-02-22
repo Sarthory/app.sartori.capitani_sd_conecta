@@ -6,7 +6,7 @@
 
 ### By typing a username/login, this app consumes GitHub REST API then inflates the screen with users data (in case there's any) in form of cards.
 
-### You can visit a seleted user profile on GitHub too.
+### You can visit a selected user profile on GitHub too.
 
 <br/>
 
