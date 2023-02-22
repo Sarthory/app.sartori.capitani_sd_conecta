@@ -14,7 +14,7 @@
 
 <br/>
 
-## To Run the project, go to project's directory with your terminal and type:
+## To run the project, go to project's directory with your terminal and type:
 
 ```
 npm install
@@ -28,13 +28,13 @@ npm run dev
 
 <br/>
 
-### You can also build and serve the project by running:
+#### You can also build and serve the project by running:
 
 ```
 npm run build
 ```
 
-### And after build finished run:
+#### And after build finished run:
 
 ```
 npm run preview
@@ -42,17 +42,17 @@ npm run preview
 
 <br/>
 
-#### The project will open in your browser with the following url http://localhost:3000;
+#### The project will open in your browser with the following url http://localhost:5173
 
 <br/>
 
-## To run the tests on the terminal run
+## To run the tests on the terminal, run
 
 ```
 npm run test
 ```
 
-## To open Cypress dashboard run
+## To open Cypress dashboard, run
 
 ```
 npm run test-dashboard
