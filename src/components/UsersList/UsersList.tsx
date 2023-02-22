@@ -13,18 +13,18 @@ const UsersList = () => {
   return (
     <>
       {!usersList.length && (
-        <NoResults>
-          <img src={GithubOctocat} alt="Github Octocat" />
+        <NoResults data-testid="noResults">
+          <img src={GithubOctocat} alt="GitHub Octocat" />
           <div className="texts">
             <h2>Nothing to show</h2>
-            <h4>Type your search term to look for Github users!</h4>
+            <h4>Type your search term to look for GitHub users!</h4>
           </div>
         </NoResults>
       )}
 
       {usersList.length > 0 && (
         <>
-          <UsersListContainer>
+          <UsersListContainer data-testid="usersList">
             {usersList.map(user => {
               return <UserCard key={user.id} userData={user} setDetailsOpen={setUserDetailModalOpen} />;
             })}

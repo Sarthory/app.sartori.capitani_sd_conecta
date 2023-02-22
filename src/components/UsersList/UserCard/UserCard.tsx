@@ -1,4 +1,3 @@
-import React from 'react';
 import { useGlobalContext } from '../../../context/GlobalContext';
 import { _githubService } from '../../../services/githubService';
 import { UserData } from '../../../types/Types';
@@ -26,14 +25,14 @@ export default function UserCard({ userData, setDetailsOpen }: Props) {
   };
 
   return (
-    <Card title={login} onClick={() => handleGetUserDetails()}>
+    <Card title={login} onClick={() => handleGetUserDetails()} data-testid="userCard">
       <div className="image">
         <img src={avatar_url} alt={login} />
       </div>
 
       <div className="userInfo">
         <div>{login}</div>
-        <span title={html_url.split('https://')[1]}>{html_url.split('https://')[1]}</span>
+        <span title={html_url.split('//')[1]}>{html_url.split('//')[1]}</span>
       </div>
     </Card>
   );

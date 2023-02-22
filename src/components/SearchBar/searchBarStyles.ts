@@ -23,6 +23,7 @@ export const SearchContainer = styled.form`
     margin: 4px 10px;
     height: 25px;
     border-radius: 5px;
+    width: 130px;
   }
 
   .searchBtn {

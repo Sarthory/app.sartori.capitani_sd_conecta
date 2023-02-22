@@ -28,37 +28,40 @@ export default function UserDeatailModal({ isOpen, setIsOpen }: Props) {
               </div>
               <h2>{login}</h2>
             </div>
+
             <hr />
+
             <div className="modalBody">
               <div className="bodyField">
                 <div>Repo URL:</div>
                 <span
+                  id="userProfileUrl"
                   className="isLink"
                   onClick={() => {
                     window.open(html_url);
                   }}>
-                  {html_url.split('https://')[1]}
+                  {html_url.split('//')[1]}
                 </span>
               </div>
 
               <div className="bodyField">
                 <div>Name:</div>
-                <span>{name || 'Name not informed'}</span>
+                <span id="userName">{name || 'Name not informed'}</span>
               </div>
 
               <div className="bodyField">
                 <div>Location:</div>
-                <span>{location || 'Location not informed'}</span>
+                <span id="userLocation">{location || 'Location not informed'}</span>
               </div>
 
               <div className="bodyField">
                 <div>Email:</div>
-                <span>{email || 'Email not informed'}</span>
+                <span id="userEmail">{email || 'Email not informed'}</span>
               </div>
 
               <div className="bodyField">
                 <div>Public repositories:</div>
-                <span>{public_repos}</span>
+                <span id="publicRepositories">{public_repos}</span>
               </div>
             </div>
 
