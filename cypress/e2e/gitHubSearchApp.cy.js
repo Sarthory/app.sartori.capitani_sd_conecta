@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /// <reference types="cypress" />
 
-describe('Tests correct rendering of Github search app features', () => {
+describe('Tests correct rendering of GitHub search app features', () => {
   beforeEach(() => {
     cy.visit('http://localhost:5173');
     cy.viewport(1366, 768);

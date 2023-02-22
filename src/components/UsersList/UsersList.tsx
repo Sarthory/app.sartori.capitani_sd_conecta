@@ -3,7 +3,7 @@ import { useGlobalContext } from '../../context/GlobalContext';
 import UserDeatailModal from '../UserDeatailModal/UserDeatailModal';
 import UserCard from './UserCard/UserCard';
 import { NoResults, UsersListContainer } from './usersListStyles';
-import GithubOctocat from '../../assets/images/github_octocat.svg';
+import GitHubOctocat from '../../assets/images/github_octocat.svg';
 import Pagination from './Pagination/Pagination';
 
 const UsersList = () => {
@@ -14,7 +14,7 @@ const UsersList = () => {
     <>
       {!usersList.length && (
         <NoResults data-testid="noResults">
-          <img src={GithubOctocat} alt="GitHub Octocat" />
+          <img src={GitHubOctocat} alt="GitHub Octocat" />
           <div className="texts">
             <h2>Nothing to show</h2>
             <h4>Type your search term to look for GitHub users!</h4>
